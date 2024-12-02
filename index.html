@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map</title>
     <script src="https://kit.fontawesome.com/37d6505749.js" crossorigin="anonymous"></script>
-<!---->
+
 </head>
 
 <style>
@@ -43,15 +43,17 @@
         border-radius: 5px;
         border: 3px solid rgb(245, 128, 128);        
     }
-    
-    svg {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
     svg path {
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 600px) {
+        #map {
+    margin: 175px auto;
+    display: block;
+    height: auto;
+        }
     }
 
 </style>
@@ -70,6 +72,7 @@
         <p id="time">Time</p>
     </div> -->
 
+    <div id="map">
     <svg id="allSvg" baseprofile="tiny" fill="#ececec" stroke="black" stroke-linecap="round" stroke-linejoin="round"
         version="1.2" viewbox="0 0 2000 857" xmlns="http://www.w3.org/2000/svg">
         <path class="allPaths"
@@ -1601,6 +1604,7 @@
         <circle cx="1798.2" cy="719.3" id="2">
         </circle>
     </svg>
+    </div>
 
 </body>
 
